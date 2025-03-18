@@ -18,7 +18,7 @@ function agregarAmigo(){
     }
     else {
         amigos.push(nombreAmigos);        
-        console.log(amigos);
+        //console.log(amigos);
         //Mostrar la lista de amigos actualizada             
         let ulListaAmigos = document.getElementById('listaAmigos');
         ulListaAmigos.innerHTML += `<li> ${nombreAmigos} </li>`;
@@ -35,7 +35,7 @@ function sortearAmigo() {
     }
     let indiceAmigos = Math.floor(Math.random()*amigos.length);
     let amigoSorteado = amigos[indiceAmigos];
-    console.log(indiceAmigos);
+    //console.log(indiceAmigos);
 
     let ulResultado = document.getElementById('resultado');
     ulResultado.innerHTML = `El amigo secreto sorteado es: <strong> ${amigoSorteado} </strong>`;
